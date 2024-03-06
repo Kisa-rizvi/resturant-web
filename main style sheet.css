@@ -1,0 +1,231 @@
+*{ 
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+    box-sizing: content-box;
+}
+@media screen and (max-width: 768px) {}
+      .container {
+          width: 100%;
+      }
+.horizontal-rule {
+    border-top: 0.5px solid #45768a;
+    border-bottom: 0.5px solid #45768a;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  margin-left: 1%;
+  cursor: pointer;
+margin-top: 1%;
+
+}
+
+.logo{
+ 
+  width: 150px;
+  height: 150px;
+  background-color:  #45768a;
+  position: relative;
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+
+@keyframes myfirst {
+  0%   {background-color :rgb(61, 61, 39); left:0px; top:0px;}
+  25%  {background-color:rgb(17, 17, 14); left:200px; top:0px;}
+ 
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(rgba(182, 162, 162, 0.65),rgba(182, 162, 162, 0.65)),url("media/bg2.jpg");
+  background-size: cover;
+  }
+
+nav h1{
+    text-align: center;
+}
+
+h1{
+    
+    justify-items: center;
+    text-align: center;
+    text-decoration:none;
+    color: rgb(235, 238, 241);
+    background-color:  #45768a;;
+    font-weight: 50px;
+  }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar
+  {  background-color:  #060c27;;
+    display: inline-block;
+    width: 100%;
+    height: 6rem;
+    color: rgb(237, 247, 247);
+  }
+  
+.heading{
+    text-decoration: none;
+    text-align: center;
+}
+ .navbar h2{
+    text-decoration: none;
+    text-align: center;
+    margin: 1%;
+}
+.navbar ul li  {
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    font-weight: bold;
+    position: relative;
+
+    }
+    .navbar ul li  a{
+    text-decoration: none;
+    color: rgb(243, 239, 239);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: px;
+    }
+    .navbar ul li ::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #e8ecec;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+        transform: scaleX(0);
+        transition-timing-function: ease-in-out;
+    }
+    .navbar ul li :hover:after{
+        width: 100px;
+        transform: scaleX(1);
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        float: right;
+        margin-right:5%;
+        border: 5px;
+        border-radius: 5px;
+        transition: 0.2s linear;
+    
+      }
+      .button:hover {
+ 
+        scale: 1.1;
+        backdrop-filter: brightness(15%);
+        box-shadow: 10 10 10px 13px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba( #45768a);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+
+      }
+      .dropdown-content a:hover {
+        background-color: #45768a;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    
+      .dropdown:hover .dropbtn {
+        background-color: #f5f5f5;
+      }
+     
+      .dropbtn{
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .dropbtn:hover {
+ 
+        scale: 1.1;
+        backdrop-filter: brightness(25%);
+        box-shadow: 10 10 10px 13px;
+      }
+      .content{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fdfafa;
+      }
+      .content p{
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 40px;
+        font-weight: bold;
+        font-size: 35px;
+        text-decoration: underline white  3px;
+        text-shadow: 6px 6px 5px rgb(20, 20, 20)
+        }
+        
+      text{
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: bold;
+
+      }
+.animation{
+  margin-top: 25%;
+  text-align: center;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #f8f5f5;
+        text-decoration: underline white  3px;
+        text-shadow: 6px 6px 5px rgb(20, 20, 20);
+        animation: slidein 14s ease-in-out infinite alternate;
+}
+  @keyframes slidein {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: -5%;
+    width: 100%;
+    background-color:  #45768a;
+    color: white;
+    text-align: center;
+ }
+
+
+
+
+
+
+
+
+
+
